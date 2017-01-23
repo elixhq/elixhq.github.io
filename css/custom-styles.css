@@ -16,3 +16,13 @@
   padding-bottom: 15px;
   margin-bottom: 15px;
 }
+
+h1, h2, h3, h4, h5, h6,
+p,
+.btn, a, span {
+  text-transform: lowercase !important;
+}
+
+#fh5co-intro a {
+  text-transform: lowercase;
+}
