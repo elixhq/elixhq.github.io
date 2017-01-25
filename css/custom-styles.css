@@ -19,8 +19,9 @@
 
 h1, h2, h3, h4, h5, h6,
 p,
-.btn, a, span, input, textarea {
+.btn, a, span {
   text-transform: lowercase !important;
+  
 }
 
 #fh5co-intro a {
