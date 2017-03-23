@@ -27,3 +27,11 @@ p,
 #fh5co-intro a {
   text-transform: lowercase;
 }
+
+.card-p {
+    line-height: 1.25;
+    color: #a8a8a8;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
