@@ -30,6 +30,7 @@ p,
 
 .card-p {
     line-height: 1.25;
+    text-transform: none !important;
     color: #a8a8a8;
     font-size: 16px;
     font-weight: 400;
