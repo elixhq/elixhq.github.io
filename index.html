@@ -5,7 +5,7 @@
 
 <html>
     <head>
-	<meta name="generator" content="Hugo 0.18.1" />
+	<meta name="generator" content="Hugo 0.21-DEV" />
             <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title> elix.ai</title>
@@ -124,16 +124,32 @@ ga('send', 'pageview');
 		<div class="container">
 			<div class="text-wrap">
 				<div class="text-inner">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2 hidden-xs">
-							<h1 class="to-animate">An innovative approach to improve pharmacovigilance</h1>
-							<h2 class="to-animate">screen potentials to prevent adverse reactions and improve patient experience using artificial intelligence and deep learning</h2>
-						</div>
-						<div class="col-md-8 col-md-offset-2 visible-xs">
-							<h1 class="to-animate" style="font-size: 40px">An innovative approach to improve pharmacovigilance</h1>
-							<h2 class="to-animate" style="font-size: 24px">screen potentials to prevent adverse reactions and improve patient experience using artificial intelligence and deep learning</h2>
-						</div>
-					</div>
+					<div id="text-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    
+    <div class="row">
+        <div class="col-xs-offset-2 col-xs-8">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="carousel-content">
+                        <div>
+							<h1>improve your clinical trail outcome by boosting patient experience</h1>
+                            <p>Elix, the patient centric platform for clinical trials, promotes continuous patient engagement increasing retention & stickiness supported by ai agent, integrates with most of the major EHR systems.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="carousel-content">
+                        <div>
+							<h1>Make it easy for patients to comply with protocol specification</h1>
+                            <p>Monitored by propritiery agent, elix will make it easy for patients to comply with clinical trial protocol specification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
 				</div>
 			</div>
 		</div>
@@ -379,7 +395,7 @@ ga('send', 'pageview');
 				</div>
 				<div class="col-md-2 col-md-offset-4 text-center">
 					<ul class="social social-circle">
-						<li><a href="https://twitter.com/BotElix"><i class="icon-twitter"></i></a></li>
+						<li><a href="https://twitter.com/ElixLabs"><i class="icon-twitter"></i></a></li>
 						<li><a href="https://www.facebook.com/ElixHQ"><i class="icon-facebook"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/elix.ai"><i class="icon-linkedin"></i></a></li>
 					</ul>
@@ -426,5 +442,14 @@ ga('send', 'pageview');
 	})(window, document, 'script', 'https://elix.yap.im/livechat');
 </script>
 
+
+<script>
+	$(function(){
+		console.log('loaded');
+		$('.carousel').carousel({
+			interval: 10000
+		})
+	});
+</script>
     </body>
 </html>

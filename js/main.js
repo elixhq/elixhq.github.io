@@ -185,7 +185,7 @@
 							setTimeout ( function () {
 								el.addClass('fadeInUp animated');
 							},  k * 200, 'easeInOutExpo' );
-
+							
 						});
 					}, 200);
 
@@ -463,7 +463,7 @@
 	// Document on load.
 	$(function(){
 
-		parallax();
+		parallax();console.log('hi');
 
 		burgerMenu();
 
