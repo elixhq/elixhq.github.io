@@ -60,3 +60,11 @@ p,
 .carousel-fade .carousel-control {
   z-index: 2;
 }
+
+.carousel-inner p {
+  height: 350px !important;
+}
+
+.carousel-control {
+  background-image: none; border-bottom: 0;
+}
