@@ -68,3 +68,8 @@ p,
 .carousel-control {
   background-image: none; border-bottom: 0;
 }
+
+.px-2 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
