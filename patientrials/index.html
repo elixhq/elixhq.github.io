@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/main.css">
 
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="scripts/vendor/modernizr.js"></script>
 </head>
@@ -27,7 +28,7 @@
   <section class="section-nav">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light top-nav">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img class="img-fluid" src="images/logo.png" width="150px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -37,19 +38,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Patients</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="patients.html">Patients</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item active">
               <a class="nav-link" href="#">Sponsor</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Solution</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="sitesolution.html">Site Solutions</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="about.html">About</a>
               </li>
           </ul>
           <a href="#contact" class="btn btn-outline-info ml-3">Contact</a>
@@ -58,40 +59,51 @@
     </div>
   </section>
   
-  <!-- Branding -->
-  <section class="section-brand">
-    <div class="container mb-5">
-      <div class="d-flex align-items-center">
-        <div class="col-md-6">
-          <h1 class="font-weight-light">Patient Centric platform <br> built on Instant Messaging</h1>
-        <div class="mt-4">
-            <a href="#patients" class="btn btn-outline-primary btn-lg px-4">For Patients</a>
-            <a href="#sponsers" class="btn btn-outline-primary btn-lg px-4 ml-4">For Sponsors</a>
-          </div>
+  <!--Index-Branding -->
+  <section class="section-indexbrand">
+    <div class="container py-5">
+        <div class="d-flex">
+            <div class="col-md-6 align-self-center">
+              <h2 class="font-weight-light ">Patient CentricPlatform <br> for Clinical Trials</h2>
+                <div class="pt-3">
+                  <a href="#patients" class="btn btn-outline-primary btn-lg">For Patients</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                  <a href="#sponsers" class="btn btn-outline-primary btn-lg">For Sponsors</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+              <img class="img-fluid" src="images/patients.png" alt="phone">
+            </div>
         </div>
-        <div class="col-md-6">
-          <img class="img-fluid py-5 mx-auto d-block" src="images/phone.png" alt="phone">
-        </div>
-      </div>
     </div>
+    <!-- <div class="d-flex align-items-center">
+        <div class="col-md-3">
+          <p class="text-center mt-3">ePRO in Clinical Trials</p>
+        </div>
+        <div class="col-md-3">
+          <p class="text-center mt-3">Shorter study timelines</p>
+        </div>
+        <div class="col-md-3">
+          <p class="text-center mt-3">Reduces Study Risk</p>
+        </div>
+        <div class="col-md-3">
+          <p class="text-center mt-3">High Data Quality</p>
+        </div>
+    </div> -->
   </section>
 
 
   <!-- Patients -->
-  <section id="patients" class="section-patients">
-      <div class="container p-4">
-          <div class="row my-3">
-              <h1>Patients</h1>
-          </div>
-          <hr class="hr pt-1" align="left">
+  <section id="patients" class="section-patients py-3 ">
+      <div class="container py-5">
+              <h2 class="pl-2">Patients</h2>
           <div class="row">
           <div class="col-md-6">
-              <h5 class="text-center py-1">Putting Patients first in Clinical trails</h5>
-              <img src="images/patients.png" width="400px" class="mx-auto d-block py-3" alt="patient"> 
+              <h5 class="text-center pt-5">Putting Patients first in Clinical trails</h5>
+              <img src="images/phone.png" class=" img-fluid mx-auto d-block pt-3" alt="patient"> 
           </div>
-          <div class="col-md-6">
-            <h4>Patient Community at Site Level enables: </h4>
-            <ul class="p-4">
+          <div class="col-md-6 pt-5" >
+            <h4 class="ml-5">Patient Community at Site Level enables: </h4>
+            <ul class="ml-5">
                 <li>ePRO in Clinical Trials </li>
                 <li>High Data Quality</li>
                 <li>Reduces Study Risk</li>
@@ -100,79 +112,81 @@
                 <li>Treatment information at patient finger tips</li>
               </ul>
           </div>
-        </div>
+          </div>
      </div>
   </section>
 
   <!-- Sponsors-->
-  <section id="sponsers" class="sponsors">
-      <div class="container p-5">
+  <section id="sponsers" class="sponsors py-3">
+      <div class="container p-4">
         <div class="row my-5">
-          <div class="col text-left">
-            <h2>Sponsors</h2>
-          </div>
-        <div class="row m-5">
-          <div class="col-md-4">
-            <img src="images/Predict.png" class="img-fluid">
-            <hr>
-            <p class="my-4"> High Predictability of the trial outcome</p>
-          </div>
-          <div class="col-md-4">
-              <img src="images/instant.png" class="img-fluid">
-              <hr>
-              <p class="my-4">Instant visiblity to patient participated all sites and reduce your site costs</p>
-          </div>
-          <div class="col-md-4">
-              <img src="images/adverse.png"  class="img-fluid">
-              <hr>
-              <p class="my-4">Early adverse event detection by propertary artificial intellgence</p>
-          </div>
-          <div class="col-md-4">
-              <img src="images/protocol.png"  class="img-fluid">
-              <hr>
-              <p class="my-4">Make it easy for patient to comply with protocol specification</p>
-          </div>
-          <div class="col-md-4">
-              <img src="images/capture.png"  class="img-fluid">
-              <hr>
-              <p class="my-4">Capture patient generated data</p>
-          </div>
-          <div class="col-md-4">
-              <img src="images/sensor.png"  class="img-fluid">
-              <hr>
-              <p class="my-4">Gather data from wearbles &amp; sensors</p>
-          </div>
-          <div class="col-md-4">
-              <img src="images/organise.png"  class="img-fluid">
-              <hr>
-              <p class="my-4">Organize trial site structure, security &amp; compliance at one single plat</p>
-          </div>
-          <div class="col-md-4">   
-              <img src="images/blockchain.png"  class="img-fluid">
-              <hr>
-              <p class="my-4">Option E-consent on blockchain</p>
-          </div>
-          <div class="col-md-4">
-              <img src="images/streamline.png"  class="img-fluid"> 
-              <hr>           
-              <p class="my-4">Streamline Re-consent across all sites with touch of button</p>
-          </div>
-      </div>
-      </div>
+            <h2 class="pl-2">Sponsors</h2>
+            <div class="row mt-3 lr-bullets pt-3">
+                <div class="col-md-4 text-center">
+                  <img src="images/01.png" alt="" class="img-fluid">
+                  <p class="text-center mt-3">High Predictability of the trial outcome</p>
+                </div>
+                <div class="col-md-4 text-center ">
+                    <img src="images/01.png"  alt="" class="img-fluid">
+                    <p class="text-center mt-3">Instant visiblity to patient participation all sites and reduce your site costs</p>
+                  </div>
+                  <div class="col-md-4 text-center">
+                      <img src="images/01.png"  alt="">
+                      <p class="text-center mt-3">Early adverse event detection by proprietary artificial intellgence</p>
+                    </div>
+              </div>
+              <div class="row mt-3 lr-bullets pt-3">
+                  <div class="col-md-4 text-center">
+                    <img src="images/01.png"  alt="">
+                    <p class="text-center mt-3">High Predictability of the trial outcome</p>
+                  </div>
+                  <div class="col-md-4 text-center ">
+                      <img src="images/01.png" alt="">
+                      <p class="text-center mt-3">Instant visiblity to patient participation all sites and reduce your site costs</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="images/01.png"  alt="">
+                        <p class="text-center mt-3">Early adverse event detection by proprietary artificial intellgence</p>
+                      </div>
+                </div>
+                <div class="row mt-3 lr-bullets pt-3">
+                    <div class="col-md-4 text-center">
+                      <img src="images/01.png"  alt="">
+                      <p class="text-center mt-3">High Predictability of the trial outcome</p>
+                    </div>
+                    <div class="col-md-4 text-center ">
+                        <img src="images/01.png"  alt="">
+                        <p class="text-center mt-3">Instant visiblity to patient participation all sites and reduce your site costs</p>
+                      </div>
+                      <div class="col-md-4 text-center">
+                          <img src="images/01.png" alt="">
+                          <p class="text-center mt-3">Early adverse event detection by proprietary artificial intellgence</p>
+                        </div>
+                  </div>
+               
+        </div>
       </div>
     </section>
   
   
   <!--Solution-->
-  <section class="section-solution">
-    <div class="container py-2">
+  <!-- <section class="section-solution">
+    <div class="container p-4">
       <div class="row my-5">
         <div class="col text-left">
           <h2>Solutions</h2>
         </div>
-        <div class="row my-5">
+        <div class="row p-4">
             <div class="=col-md-3 text-center">
-                <div class="card m-3" style="width: 15rem;">
+                <div class="card m-2" style="width: 15rem;">
+                    <img class="card-img m-4" src="images/heart.png" alt="Card image cap" >
+                    <div>
+                      <p class="card-text m-3">Site level community to enhance patient adherence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="=col-md-3 text-center">
+                <div class="card m-2" style="width: 15rem;">
                     <img class="card-img m-4" src="images/doctor.png" alt="Card image cap" >
                     <div>
                       <p class="card-text m-4">Interactive informed <br>
@@ -182,46 +196,90 @@
                 </div>
             </div>
           <div class="=col-md-3 text-center">
-              <div class="card m-3" style="width: 15rem;">
+              <div class="card m-2" style="width: 15rem;">
                   <img class="card-img m-4" src="images/resource.png" alt="Card image cap" >
                   <div>
                     <p class="card-text m-5">Manage multiple studies, site structure, resources and compliance from a single platform.</p>
                   </div>
               </div>
           </div>
-          <div class="=col-md-3 text-center">
-              <div class="card m-3" style="width: 15rem;">
+          <div class="=col-md- text-center">
+              <div class="card m-" style="width: 15rem;">
                   <img class="card-img m-4" src="images/app.png" alt="Card image cap" >
                   <div>
                     <p class="card-text m-5">Early adverse event detection powered by Artificial Intelligence</p>
                   </div>
               </div>
           </div>
-          <div class="=col-md-3 text-center">
-              <div class="card m-3" style="width: 15rem;">
-                  <img class="card-img m-4" src="images/heart.png" alt="Card image cap" >
-                  <div>
-                    <p class="card-text m-3">Site level community to enhance patient adherence.</p>
-                  </div>
-              </div>
-          </div>
+       
         </div>
       </div>
-  </section>
+  </section> -->
+
+  <section id="sponsers" class="section-solution py-3">
+      <div class="container p-4">
+        <div class="row my-3">
+            <h2 class="pl-2">Sponsors</h2>
+            <div class="row py-5">
+                <div class="col-md-3 text-center feature-link">
+                    <div class="card">
+                  <img src="images/heart.png" class="card-img m-4" alt="">
+                  <p class="text-center">Site level community to enhance patient adherence.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card">
+                    <img src="images/doctor.png" class="card-img m-4" alt="">
+                    <p class="text-center pt-4">Interactive informed consent &amp; Re-consent</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card">
+                    <img src="images/resource.png" class="card-img m-4" alt="">
+                    <p class="text-center pt-4">Manage multiple studies, site structure, resources and compliance from a single platform.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card">
+                  <img src="images/app.png"  class="card-img m-4" alt="">
+                  <p class="text-center pt-4">Early adverse event detection powered by Artificial Intelligence</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+  </section>          
 
   <!-- Secondray contact Section -->
-  <section id="about" class="sec-contact">
-    <div class="container pt-2">
+  <!-- <section id="about" class="sec-contact">
+    <div class="container p-4">
       <div class="row">
-        <div class="col-md-9 p-5">
-          <h2 class="h2 text-white">Schedule <br> a Consultation &amp; Platform Demo</h2> 
+        <div class="col-md-8">
+          <h2 class="text-white ml-1">Schedule a Platform Demo</h2> 
         </div>
-        <div class="col-md-3 p-4">
-            <button type="button" class="btn-lg btn-light">Contact us</button>   
+        <div class="col-md-3 pt-2">
+            <button type="button" class="btn-lg btn-light mt-3">Contact us</button>   
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
+
+  <section id="about" class="sec-contact">
+      <div class="container p-4">
+        <div class="row my-3">
+          <div class="col-md-8">
+            <h2 class="text-white pr-2">Schedule a Platform Demo</h2>
+          </div>
+          <div class="col-md-4">
+              <button type="button" class="btn-lg btn-light">Contact us</button>   
+          </div>
+        </div>
+     </div>
+  </section>          
+
+
+
+
   <!--Pre-Footer Section -->
   <section class="section-footer">
     <div class="container py-3">
@@ -231,12 +289,25 @@
           <div>
               <p class="small pt-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
           </div>
-          <div> 
-              <img src="images/facebook.png">
-              <img src="images/twitter.png" >
-              <img src="images/insta.png" >
-              <img src="images/linkedin.png">
-              <img src="images/googleplus.png">
+         <div class="py-2">
+            <a href="#" target="_blank">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-square fa-stack-2x" style="color:rgb(59, 80, 126);"></i>
+                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                  </span>
+            </a>
+            <a href="#" target="_blank">
+              <span class="fa-stack fa-lg">
+                    <i class="fa fa-square fa-stack-2x" style="color:rgb(59, 80, 126);"></i>
+                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>    
+            <a href="#" target="_blank">
+              <span class="fa-stack fa-lg">
+                    <i class="fa fa-square fa-stack-2x" style="color:rgb(59, 80, 126);"></i>
+                    <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
           </div>
         </div>
             <div class="col-md-4 mt-5 px-5">
